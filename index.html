@@ -1,0 +1,41 @@
+<html>
+<head>
+
+</head>
+<body>
+<span id="controls" onclick="audioControl();" style="z-index:999;position:absolute;">audio: on</span>
+<!--<div onmouseover="alert(1);" onclick="alert(1)" style="z-index:999;width:50px;height:50px;background-color:#666;position:absolute;">audio: on</div>-->
+
+<style>
+body
+{
+background-image:url('images/bg1.png');
+background-size: 100%;
+}
+</style>
+<img id="terrain1" src="images/terrain1.png" style="display:none;">
+<img id="block1" src="images/block1.png" style="display:none;">
+<img id="Pleftforward" src="images/leftforward.png" style="display:none;">
+<img id="Prightforward" src="images/rightforward.png" style="display:none;">
+<img id="Pstanding" src="images/standing.png" style="display:none;">
+<img id="Pjumping" src="images/jumping.png" style="display:none;">
+<img id="C1leftForward" src="images/commy1LeftForward.png" width="23" height="45" style="display:none;">
+<img id="C1rightForward" src="images/commy1RightForward.png" width="23" height="45" style="display:none;">
+<img id="C1standing" src="images/commy1standing.png" width="23" height="45" style="display:none;">
+<img id="flag1" src="images/flag1.gif" style="display:none;">
+<script type="text/javascript" >
+//document.getElementById("main").style.height=window.innerHeight;
+//document.getElementById("main").style.width=window.innerWidth;
+	document.write('<canvas id="main" height='+window.innerHeight+' width='+window.innerWidth+' style="top:0px; left:0px; position:absolute;"></canvas>');
+</script>
+<script src="maps.js"></script>
+<script src="classes.js"></script>
+<script src="arbitrary.js"></script>
+<script src="vars.js"></script>
+<script src="collision.js"></script>
+<script src="events.js"></script>
+<script src="main.js" ></script>
+<audio id="dieSound" src="music/die.mp3" preload></audio>
+<audio id="bgSound" src="music/bgsong1.mp3" autoplay loop></audio>
+</body>
+</html>
